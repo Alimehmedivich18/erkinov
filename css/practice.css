@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+a{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+
+.header{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #f1f1f1;
+    z-index: 100;
+    transition: .3s;
+
+}
+.header.shrink{
+    box-shadow: 0 5px 5px #0001;
+    background: rgba(0, 0, 0, 0.742);
+    color: white;
+    backdrop-filter: blur(10px);
+}
+.header.shrink .navbar{
+    height: 60px;
+}
+.navbar{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    transition: .3s;
+}
+.navbar ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.hero{
+    min-height: 800px;
+    height: 100%;
+    
+}
+.rect{
+    width: 100%;
+    height: 165vh;
+    border: 5px solid red;
+    padding: 70px 50px;
+}
+
+.top{
+    width: 60px;
+    height: 60px;
+    background: #000;
+    border-radius: 50%;
+    display: inline-block;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+    transform: rotate(90deg);
+    transition: .3s;
+}
+.top.hidden{
+    bottom: -60px;
+    right: -60px;
+}
+
+
+.box{
+    max-width: 700px;
+    width: 100%;
+    height: 500px;
+    margin: 20px auto;
+    position: relative;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.box button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -65px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #DCC38B;
+    color: white;
+    border: 8px solid white;
+}
+
+
+
+.text{
+    width: 400px;
+    height: 100px;
+    margin: 30px auto;
+    overflow: auto;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 40px;
+}
+.card{
+    width: 300px;
+    height: 290px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    padding: 16px;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    transition: .3s;
+}
+.card__body{
+    text-align: center;
+    margin-top: 16px;
+}
+.card:hover img{
+    width: 150px;
+    height: 150px;
+    
+}
+.imges{
+    border: 1px solid red;
+    display: flex;
+}
+.hero__imge{
+    width: 50%;
+}
+.hero__title{
+    font-size: 49px;
+    margin-bottom: 42px;
+    text-align: center;
+}
+.ensoc{
+    text-align: center;
+}
+.heros{
+    margin-top: 10px;
+    text-align: center;
+}
+.sect{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 10px;
+}
+.seteal{
+    width: 260px;
+    height: 300px;
+    background: white;
+    border: 1px solid gray;
+}
+.backe{
+    width: 140px;
+    height: 40px;
+    background: #333;
+    color:white;
+}
+.house{
+    margin-top: 10px;
+}
+.by{
+    margin-top: 10px;
+}
+.ptho{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 10px;
+}
+.eneto{
+    width: 500px;
+    height: 400px;
+    background: white;
+    border: 1px solid gray;
+}
+.histroy{
+    margin-bottom: 10px;
+}
+.NOICELAND{
+    flex: 1;
+}
+
